@@ -12,5 +12,5 @@ def UpperCase(string):
     return string.upper()
 #call function to print string 
 print(UpperCase('love to advanture'))
-print(UpperCase('proud on your own efforts'))
+print(UpperCase('proud on your own efforts')) # print line by calling function 
 
