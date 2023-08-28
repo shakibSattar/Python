@@ -16,3 +16,14 @@ def listNum(myList):
         return 'there are '+ str(myList[0]) + ' ' + myList[1] + 's.'
 print(listNum(['5', 'cat']))
 print(listNum(['1', 'dog']))
+
+##--- declere function tha return list with specific number of coharacter by condition
+def managString(string):
+    if len(string) <= 5:
+        return string
+    else:
+        return string[0:3] + '.'
+
+print(managString('london'))
+print(managString('stops'))
+
