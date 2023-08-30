@@ -15,4 +15,15 @@ numbers = [number1, number2, number3]
 total = sum(numbers)
 print(total)
 
+##--- Add thre numbers that given one  user 
+number = int(input('Enter number: '))
+
+a =  number % 10     #(345 % 10 = 5)
+number = number // 10 #(345 // 10 = 34)
+b = number % 10  #(34 % 10 = 4)
+c = number // 10 #(34 // 10 = 3)
+sum_num = a+b+c
+print(sum_num)
+
+
 

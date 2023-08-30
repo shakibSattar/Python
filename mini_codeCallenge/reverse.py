@@ -1,23 +1,16 @@
 ##---Write a program that will reverse a four digit number.Also it checks whether the reverse is true.
 
-user = int(input('Enter four digit number: '))
-number = user
-
-a = number %10
-number = number // 10
-
-b = number % 10
-number = number // 10
-
-c = number % 10
-d = number //  10
-
-#apply forumla to reverse four digit number 
-reverse = 1000*a + 100*b + 10*c + d
-print('actual number is ', user)
+digits = int(input('Enter four digit number: '))
+if 1000 <= digits <= 9999:
+    digit1 = digits //1000
+    digit2 = (digits // 100) % 10
+    digit3 = (digits //10) % 10
+    digit4 = digits % 10
+    reverse = 1000*digit4 +100* digit3 + 10*digit2 + digit1
+print('actual number is ', digits)
 print('Reversed number is ', reverse)
 #check condition
-if user == reverse:
+if digits == reverse:
     print('true')
 else:
     print('false')
