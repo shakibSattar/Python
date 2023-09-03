@@ -1,4 +1,4 @@
-##--User will input (2numbers).Write a program to swap the numbers--
+#--User will input (2numbers).Write a program to swap the numbers--
 
 num1 = input('Enter number 1: ')
 num2 = input('Enter number 2: ')

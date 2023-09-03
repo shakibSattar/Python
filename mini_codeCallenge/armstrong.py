@@ -1,4 +1,5 @@
-##--Write a program that will take three digits from the user and add the square of each digit.--
+##--Write a program that will take three digits from the user and add 
+##the square of each digit.--
 number = int(input('Enter thre digits number: '))
 if 100<=number<=999:
     number1 = number //100
@@ -10,4 +11,18 @@ if 100<=number<=999:
         print('number is not arm strong')
 else:
     print('Invalid number, try again! ')
+    
+    
+    
+##---------Print all the armstrong numbers in the range of 100 to 1000--------
+for n in range(100, 1000):
+    flag = 0
+    number11 = n //100
+    number12 = (n //10)%10
+    number13 = n %10
+    
+    if n == number11**3 + number12**3 + number13**3 :
+        print('armstrong number is :', n)
+        flag = flag + n
+  
     
